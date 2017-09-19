@@ -1,0 +1,35 @@
+2017-06-13 16:06:03,458 WARN  [SoapUI] Missing folder [/Users/lyle/workspace/tal_soap/ext] for external libraries
+2017-06-13 16:06:03,459 INFO  [DefaultSoapUICore] Creating new settings at [/Users/lyle/soapui-settings.xml]
+2017-06-13 16:06:07,187 INFO  [PluginManager] 0 plugins loaded in 11 ms
+2017-06-13 16:06:07,187 INFO  [DefaultSoapUICore] All plugins loaded
+2017-06-13 16:06:09,129 INFO  [WsdlProject] Loaded project from [file:/Users/lyle/workspace/tal_soap/soapui-maven-plugin-tester/src/test/soapui/GroovyLog-soapui-project.xml]
+2017-06-13 16:06:09,139 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [GroovyLog]
+2017-06-13 16:06:09,140 INFO  [SoapUITestCaseRunner] Running TestCase [Groovy log should have at most one ConsoleAppender]
+2017-06-13 16:06:09,179 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Groovy log should have at most one ConsoleAppender]
+2017-06-13 16:06:09,180 INFO  [SoapUITestCaseRunner] running step [Count ConsoleAppender should be zero or one]
+2017-06-13 16:06:09,911 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Groovy log should have at most one ConsoleAppender], time taken: 713ms, status: FINISHED
+2017-06-13 16:06:09,911 INFO  [SoapUITestCaseRunner] TestCase [Groovy log should have at most one ConsoleAppender] finished with status [FINISHED] in 713ms
+2017-06-13 16:06:09,939 INFO  [WsdlProject] Loaded project from [file:/Users/lyle/workspace/tal_soap/soapui-maven-plugin-tester/src/test/soapui/GroovyLog-soapui-project.xml]
+2017-06-13 16:06:09,940 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [GroovyLog]
+2017-06-13 16:06:09,940 INFO  [SoapUITestCaseRunner] Running TestCase [Groovy log should have at most one ConsoleAppender]
+2017-06-13 16:06:09,941 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Groovy log should have at most one ConsoleAppender]
+2017-06-13 16:06:09,983 INFO  [SoapUITestCaseRunner] running step [Count ConsoleAppender should be zero or one]
+2017-06-13 16:06:10,063 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Groovy log should have at most one ConsoleAppender], time taken: 78ms, status: FINISHED
+2017-06-13 16:06:10,063 INFO  [SoapUITestCaseRunner] TestCase [Groovy log should have at most one ConsoleAppender] finished with status [FINISHED] in 78ms
+2017-06-13 16:06:10,262 INFO  [WsdlProject] Loaded project from [file:/Users/lyle/workspace/tal_soap/soapui-maven-plugin-tester/src/test/soapui/SoapUI-Maven-Plugin-Tester-soapui-project.xml]
+2017-06-13 16:06:10,263 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [SoapUI Maven Plugin Tester]
+2017-06-13 16:06:10,264 INFO  [SoapUITestCaseRunner] Running TestCase [ShouldRun]
+2017-06-13 16:06:10,268 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [ShouldRun]
+2017-06-13 16:06:10,268 INFO  [SoapUITestCaseRunner] running step [Succeed]
+2017-06-13 16:06:10,274 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [ShouldRun], time taken: 0ms, status: FINISHED
+2017-06-13 16:06:10,274 INFO  [SoapUITestCaseRunner] TestCase [ShouldRun] finished with status [FINISHED] in 0ms
+2017-06-13 16:06:10,310 INFO  [WsdlProject] Loaded project from [file:/Users/lyle/workspace/tal_soap/soapui-maven-plugin-tester/src/test/soapui/SoapUI-Maven-Plugin-Tester-soapui-project.xml]
+2017-06-13 16:06:10,312 INFO  [SoapUILoadTestRunner] Running LoadTest [LoadTest]
+2017-06-13 16:06:10,508 INFO  [SoapUILoadTestRunner] LoadTest [LoadTest] progress: 0.115, 1
+2017-06-13 16:06:11,515 INFO  [SoapUILoadTestRunner] LoadTest [LoadTest] finished with status FINISHED
+2017-06-13 16:06:11,516 INFO  [SoapUILoadTestRunner] Exporting log and statistics for LoadTest [LoadTest]
+2017-06-13 16:06:11,523 INFO  [SoapUILoadTestRunner] Exported 2 log items to [/Users/lyle/workspace/tal_soap/soapui-maven-plugin-tester/target/soapui/output/LoadTest-log.txt]
+2017-06-13 16:06:11,523 INFO  [SoapUILoadTestRunner] Exported 0 error results
+2017-06-13 16:06:11,525 INFO  [SoapUILoadTestRunner] Exported 2 statistics to [/Users/lyle/workspace/tal_soap/soapui-maven-plugin-tester/target/soapui/output/LoadTest-statistics.txt]
+2017-06-13 16:06:11,525 INFO  [SoapUILoadTestRunner] Skipping testcase [ShouldNotRun], filter is [ShouldRun]
+2017-06-13 16:06:11,525 INFO  [SoapUILoadTestRunner] SoapUI suite [ShouldRun] finished in 1214ms

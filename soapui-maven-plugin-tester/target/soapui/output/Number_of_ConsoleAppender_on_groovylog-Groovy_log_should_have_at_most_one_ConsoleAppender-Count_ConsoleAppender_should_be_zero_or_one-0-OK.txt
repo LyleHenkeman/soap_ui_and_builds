@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 78
+Size: 0
+Timestamp: Tue Jun 13 16:06:09 SAST 2017
+TestStep: Count ConsoleAppender should be zero or one
+
+----------------- Messages ------------------------------

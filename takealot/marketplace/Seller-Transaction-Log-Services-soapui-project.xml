@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b2c676aa-404e-4582-a652-13c5e3434ce5" activeEnvironment="Default" name="Seller Transaction Log Services" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="97d393c0-286d-4e3f-8a15-4c83eaa6289f" wadlVersion="http://wadl.dev.java.net/2009/02" name="Transaction log" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+    </con:endpoints>
+    <con:resource name="CreateTransactions" path="/seller_transaction_log/CreateTransactions" id="712f2a60-6448-42ab-9c23-d45962d07cc2">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="CreateTransactions" id="f39491da-f4ff-477c-ad85-8e09531bd0a4" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cre="http://10.4.1.64/seller_transaction_log/CreateTransactions">cre:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="cc7b7e6f-ef8d-41fe-9999-d5a6c326972d" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "transaction_references_pair_list": {
+    "transaction": {
+      "seller_id": 9991,
+      "customer_id": 0,
+      "value_inc_vat": 0,
+      "transaction_log_id": 0,
+      "date_added": 0,
+      "transaction_type_id": 0,
+      "vat_multiplier": 0
+    },
+    "references": {
+      "date_added": "string",
+      "reference_type_id": 0,
+      "value": "string"
+    }
+  },
+  "trace_id": "string"
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_transaction_log/CreateTransactions</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetSellerOrderTransactionAmounts" path="/seller_transaction_log/GetSellerOrderTransactionAmounts" id="07a24506-fcf9-4d76-b2bc-286aa303f2d7">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="f9de6350-5819-438f-af43-1d32c49e43ab" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_transaction_log/GetSellerOrderTransactionAmounts">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e90b9b97-8978-45b7-a435-ae96c0c320fa" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "order_item_ids": 0
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_transaction_log/GetSellerOrderTransactionAmounts</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTransactionsByDateRange" path="/seller_transaction_log/GetTransactionsByDateRange" id="c328398d-a682-4536-9394-3ee4d60ca2c0">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="43445d95-95c4-4951-959e-eb9afd3e80be" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_transaction_log/GetTransactionsByDateRange">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="def93a5a-af1c-49cd-9ec3-11fc44f4aae3" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  },
+  "start_date": 0,
+  "end_date": 0,
+  "trace_id": "string"
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_transaction_log/GetTransactionsByDateRange</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTransactionsByIdRange" path="/seller_transaction_log/GetTransactionsByIdRange" id="2e30ca11-2af6-443b-8a00-a79a29bec409">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="c368980f-5c32-4163-9057-df958f622d5c" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_transaction_log/GetTransactionsByIdRange">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="e07f24fd-b06c-483c-a2d4-6ecaada06c81" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  },
+  "start_id": 0,
+  "trace_id": "string",
+  "end_id": 0
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_transaction_log/GetTransactionsByIdRange</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTransactionsFromIdToDate" path="/seller_transaction_log/GetTransactionsFromIdToDate" id="22fc9cfc-87b7-4fb5-b5ee-2565ec088c3c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="42b5ccca-f7fa-4c74-ab84-79308c77b4c9" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_transaction_log/GetTransactionsFromIdToDate">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="b03f8d4e-9c2f-4067-a6f5-6cd707b04e11" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "start_id": 1,
+  "trace_id": "string",
+  "end_date": 20170619,
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_transaction_log/GetTransactionsFromIdToDate</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+<name>Test_TAL_APIs</name>
+<groupId>takealot</groupId>
+<artifactId>com.example.soapuitests</artifactId>
+<version>5.3.0</version>
+<packaging>jar</packaging>
+<description>tal-soap</description>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>com.smartbear.soapui</groupId>
+            <artifactId>soapui-maven-plugin</artifactId>
+            <version>5.3.0</version>
+
+            <executions>
+                <execution>
+                    <id>RestAPI-positiveTestSuite</id>
+                    <configuration>
+                        <projectFile>RestAPI-positiveTestSuite.xml</projectFile>
+
+                        <outputFolder>target/surefire-reports</outputFolder>
+                        <testSuite>Positive cases</testSuite>
+
+                        <junitReport>true</junitReport>
+                        <exportwAll>true</exportwAll>
+                        <printReport>true</printReport>
+                        <testFailIgnore>true</testFailIgnore>
+                    </configuration>
+                    <goals>
+                        <goal>test</goal>
+                    </goals>
+                    <phase>test</phase>
+                </execution>
+                <execution>
+                    <id>RestAPI-negativeTestSuite</id>
+                    <configuration>
+                        <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
+                        <outputFolder>target/surefire-reports</outputFolder>
+                        <testSuite>Negative tests</testSuite>
+
+                        <junitReport>true</junitReport>
+                        <exportwAll>true</exportwAll>
+                        <printReport>true</printReport>
+                        <testFailIgnore>true</testFailIgnore>
+                    </configuration>
+                    <goals>
+                        <goal>test</goal>
+                    </goals>
+                    <phase>test</phase>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>

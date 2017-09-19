@@ -1,0 +1,3 @@
+time,type,step,message
+2017-06-13 16:06:10,Message,,"LoadTest started at Tue Jun 13 16:06:10 SAST 2017"
+2017-06-13 16:06:11,Message,,"LoadTest ended at Tue Jun 13 16:06:11 SAST 2017"

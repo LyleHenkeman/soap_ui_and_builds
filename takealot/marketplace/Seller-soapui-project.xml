@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b7925829-0c53-4141-8470-3bf93a59ed7c" activeEnvironment="Default" name="Seller" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="8231431b-28c4-48d9-8365-74795bf5c15f" wadlVersion="http://wadl.dev.java.net/2009/02" name="seller" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+    </con:endpoints>
+    <con:resource name="createTask" path="seller/CreateTask" id="a93169f5-0e29-4496-83bc-d6cc1bdfb347">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="b0fb298d-88ef-4273-98c6-4de8353f1440" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cre="http://10.4.1.64/seller/CreateTask">cre:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="f0284b26-a626-495a-96f7-4dd90d7339e8" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "task_type": {
+    "name": "string",
+    "event_name": "string",
+    "input_params_json": "string",
+    "task_group": {
+      "task_group_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "task_type_id": 0,
+    "description": "string"
+  },
+  "request_params": "string",
+  "trace_id": "string",
+  "requested_by": 0,
+  "size": 0
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/CreateTask</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="FlagTaskFailed" path="/seller/FlagTaskFailed" id="6c05a187-fce7-4803-8496-c1640ebf423d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="18126713-2bd6-408c-b9e7-937c3d339c0d" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="b003d772-2379-47ac-87e7-696f3083d108" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "task": {
+    "seller_id": 0,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 0,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 0
+  },
+  "result_params": "string"
+}</con:request>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="FlagTaskSuccess" path="/seller/FlagTaskSuccess" id="a062e17f-8bc9-43dc-8ae1-f3dcb267ca6b">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="b72071b1-9d77-4573-8dfd-9de33809ba8e" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:flag="http://10.4.1.64/seller/FlagTaskSuccess">flag:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="ccbc982c-be8c-4941-9107-c026f73ef92e" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "task": {
+    "seller_id": 9991,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 1,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 0
+  },
+  "result_params": "string"
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/FlagTaskSuccess</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetGroupCommunicationByCount" path="/seller/GetGroupCommunicationByCount" id="9444c878-468d-48ba-a842-614e45dd51b2">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="46369337-868a-4886-b9dd-b6cdcbbf2cef" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetGroupCommunicationByCount">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="169d0471-e71b-4f50-8930-6626a1292550" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "count": 2
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetGroupCommunicationByCount</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTaskById" path="/seller/GetTaskById" id="1f155bbc-6819-44af-a903-7b28db6e8861">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="cf5bb11e-b039-40da-94a5-99647b4327ac" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetTaskById">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="ca1e4305-5abe-4595-a28f-448e3af2378a" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "include_json": true,
+  "task": {
+    "seller_id": 9991,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 1,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 0
+  },
+  "include_group": true
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetTaskById</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTasksBySeller" path="/seller/GetTasksBySeller" id="730f1464-1dc0-4692-89f9-4dec077f083c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="2848246b-719b-403e-8847-104e1b17d153" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetTasksBySeller">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="07e0ef84-e56f-477f-b9a5-26871b1e714d" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "task_type": {
+    "name": "string",
+    "event_name": "string",
+    "input_params_json": "string",
+    "task_group": {
+      "task_group_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "task_type_id": 0,
+    "description": "string"
+  },
+  "order_by": "string",
+  "task_group": {
+    "task_group_id": 0,
+    "name": "string",
+    "description": "string"
+  },
+  "include_json": true,
+  "page_size": 0,
+  "order_direction": "string",
+  "page_number": 0
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetTasksBySeller</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTaskStatusLog" path="/seller/GetTaskStatusLog" id="5412dd32-04ac-4de0-b769-65617a8a6267">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="ee6c439b-117d-4b04-b9d0-be75b16d47b1" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetTaskStatusLog">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="5e1fadb3-f45d-4c89-9ab5-ccc30be9d6b7" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "task": {
+    "seller_id": 9991,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 1,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 0
+  },
+  "page_number": 0,
+  "page_size": 0
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetTaskStatusLog</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTaskStatusTypes" path="/seller/GetTaskStatusTypes" id="cc106e92-585e-4bb5-898e-fd336f621f91">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="a5decf84-cc7e-414e-8f77-e0ed668689f9" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetTaskStatusTypes">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="fe2efd48-5215-4ef3-9128-83ce7d4f070a" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.4.1.64/seller/GetTaskStatusTypes</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTaskTypes" path="/seller/GetTaskTypes" id="24415a49-8c96-4ebe-8c4a-c105b3374041">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="7901f92e-de3a-4a21-8158-748d10098e0e" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetTaskTypes">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="0b514c59-49f4-4ba7-96ba-53c42c722742" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "task_group": {
+    "task_group_id": 0,
+    "name": "string",
+    "description": "string"
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetTaskTypes</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetUnfinishedTasks" path="/seller/GetUnfinishedTasks" id="d2c2c769-4ff7-4d8a-afcf-e1c99febfc48">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="5eba67b1-4260-492b-b764-51a5b39f7b96" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetUnfinishedTasks">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="6d76ee14-1d76-450c-ba69-c74a65538c3a" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 0,
+  "task_type": {
+    "name": "string",
+    "event_name": "string",
+    "input_params_json": "string",
+    "task_group": {
+      "task_group_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "task_type_id": 0,
+    "description": "string"
+  },
+  "order_by": "string",
+  "include_json": true,
+  "page_size": 0,
+  "order_direction": "string",
+  "page_number": 0
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetUnfinishedTasks</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTaskTypes" path="/seller/GetTaskTypes" id="51d938e4-3f1e-411a-b777-82bd20da76c7">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="a7ce4550-aead-4751-8e58-338d6b6fbf44" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetTaskTypes">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="7be4b02c-b186-442d-a572-2a3d4ab82917" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "task_group": {
+    "task_group_id": 1,
+    "name": "string",
+    "description": "string"
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/GetTaskTypes</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetUnfinishedTasks" path="/seller/GetUnfinishedTasks" id="077502f2-66ae-4ee9-8e04-7990b32c4c8a">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="472201db-217f-439a-b455-16283c8e7b0c" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller/GetUnfinishedTasks">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="1b948d8b-4010-4634-92d8-da4a03b3e660" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.4.1.64/seller/GetUnfinishedTasks</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="StartProcessingTask" path="/seller/StartProcessingTask" id="40cde522-3787-451b-a544-1505777f852d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="7965c547-bbd6-44b1-a175-62ae4c4fec46" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:star="http://10.4.1.64/seller/StartProcessingTask">star:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="d9094240-ef26-410d-ae65-f3ce89a262e1" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "event_id": "string",
+  "task": {
+    "seller_id": 0,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 1,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/StartProcessingTask</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="UpdateTaskSize" path="/seller/UpdateTaskSize" id="a1adb38b-37ee-4c44-95a4-199d4d86c912">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="0bd0c31b-9b18-4d6f-bcdb-3e613bd1c45e" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:upd="http://10.4.1.64/seller/UpdateTaskSize">upd:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="6932034e-d675-4bae-a4c6-9b79b38c4dfd" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "progress": 0,
+  "task": {
+    "seller_id": 9991,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 1,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 1
+  },
+  "size": 1
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/UpdateTaskSize</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="UpdateTaskStatus" path="/seller/UpdateTaskStatus" id="c3d9a229-58f6-4177-a920-7ebf4d15b21c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="67aabded-e646-4140-aaf1-731e114bff98" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:upd="http://10.4.1.64/seller/UpdateTaskStatus">upd:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="52159d72-60be-437e-948a-1fe07cef72ad" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "requested_by": 0,
+  "progress": 0,
+  "task": {
+    "seller_id": 9991,
+    "task_type": {
+      "name": "string",
+      "event_name": "string",
+      "input_params_json": "string",
+      "task_group": {
+        "task_group_id": 0,
+        "name": "string",
+        "description": "string"
+      },
+      "task_type_id": 0,
+      "description": "string"
+    },
+    "request_params": "string",
+    "task_id": 1,
+    "task_status_type": {
+      "task_status_type_id": 0,
+      "name": "string",
+      "description": "string"
+    },
+    "event_id": "string",
+    "trace_id": "string",
+    "requested_by": 0,
+    "date_updated": 0,
+    "result": "string",
+    "date_created": 0,
+    "progress": 0,
+    "size": 0
+  },
+  "task_status_type": {
+    "task_status_type_id": 1,
+    "name": "string",
+    "description": "string"
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller/UpdateTaskStatus</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

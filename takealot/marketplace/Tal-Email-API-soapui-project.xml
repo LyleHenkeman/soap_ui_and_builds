@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="98b5e46a-b751-41e4-a673-b8414fd4ac6a" activeEnvironment="Default" name="Tal Email API" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="true"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="true"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/Users/nonkanyisomaqungo/workspace/Market Place/SoapUI Projects"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="true"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value="http://email.mpstg1.env:8003"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="a7801031-df09-44eb-b482-d9412f56bc57" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://email.mpstg1.env:8003" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Send" path="/email/send" id="96576e25-e593-4739-b78a-a0976a689090">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Send 1" id="448ee4fa-e6aa-453f-9ca5-e54009925ff2" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>400 500</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>multipart/form-data</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>multipart/mixed</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+          <con:request>{
+    "type": "marketplace_start_selling",
+    "seller": 9991
+}</con:request>
+          <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="c3813df7-ad9b-4de8-b72d-367a5365fe35" name="Tal Email API - Test Suite">
+    <con:settings/>
+    <con:runType>PARALLELL</con:runType>
+    <con:testCase id="ce308942-d847-4e3c-aa1c-2ad6c4a2d0d6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="marketplace_start_selling" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Success marketplace_start_selling" id="9491d04c-8ba6-4a80-a848-66f94bfb6a36">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Success marketplace_start_selling" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "marketplace_start_selling",
+    "seller": 9991
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="5e4b006d-98b0-4f56-a1fb-55a2c2ec460c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="marketplace_lead_time_order_placed_notification" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Success marketplace_lead_time_order_placed_notification" id="8cb08dcd-4bfd-4720-84a6-89d3f243a6d7">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Success marketplace_lead_time_order_placed_notification" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "marketplace_lead_time_order_placed_notification",
+    "id_seller": 9991,
+    "id_order_items": [44722660]
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="8b618408-f276-4371-a728-488e89f9e143" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_welcome" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_welcome" id="2190d4be-c0f7-488b-b26e-5732cea7ffdd">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_welcome" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_welcome",
+    "seller": 9991
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="7b99f74f-bc72-4112-a3b9-f7b1eedb2e90" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_registration" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_registration" id="bdfd8c41-3f9b-4aa2-9283-10ec64b2f234">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_registration" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+	"type": "seller_registration",
+	"password_reset_id": 5,
+	"customer": 2295475
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="e78be03e-786e-49bc-829a-cbd66b3b8aee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_notification" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_notification" id="9569de6d-c2f3-446a-a5d2-38226adf9b90">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_notification" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+	"type": "seller_notification",
+	"seller": 1579,
+	"notification_preference": "ready_for_download"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="e8e2246c-ba5a-40e0-b593-970415d481ee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_bulk_listing_notification" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_bulk_listing_notification" id="2ff61397-f6e3-4403-a827-3dab413be30c">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_bulk_listing_notification" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_bulk_listing_notification",
+    "sellerIid": 9991,
+    "upload_date": "2017-01-12"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="69931f78-8358-4283-a3bc-dd000c424fe0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_inventory_export_notification" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_inventory_export_notification" id="3c96e5f0-09b7-4dcc-abc2-1871a95a2434">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_inventory_export_notification" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_inventory_export_notification",
+    "seller_id": 9991 ,
+    "export_date":"12/12/2016"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="f4cb1e78-c0c2-4e3e-a06e-3c95cc7f1b7b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_catalog_expansion" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_catalog_expansion" id="a8b1bc87-454d-4920-97ad-52907acf8940">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_catalog_expansion" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_catalog_expansion",
+    "seller": 9991,
+    "customer": 508745
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="0734930b-360a-45c5-9e52-403422da8c74" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_manual_catalog_expansion" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_manual_catalog_expansion" id="c5da2b0b-9d9b-471f-a33d-5d0a1b9889af">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_manual_catalog_expansion" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_manual_catalog_expansion",
+    "seller": 9991,
+    "data": [38371534, 37004380, 41685360]
+
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="9e38085e-b655-44ba-8c49-fefa2ee8613a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_inbound_shipment" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_inbound_shipment" id="371a2c4e-1030-49b9-984d-7d8ad9875cdd">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_inbound_shipment" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_inbound_shipment",
+    "seller": 9991,"shipping_order":26888 ,"shipment": 51572
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="1409527b-9661-4765-9216-58359b68d842" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_ready_to_dispatch_removal_shipment" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_ready_to_dispatch_removal_shipment" id="46d5eb94-a6a0-42e1-acbe-463207c03372">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_ready_to_dispatch_removal_shipment" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_ready_to_dispatch_removal_shipment",
+    "seller": 9991,"shipment": 51572
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="ac81420a-b7e0-4166-a7e0-75cc3a691319" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_enquiry_notification" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_enquiry_notification" id="1d987fe4-25cd-411f-b4cb-087355847032">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_enquiry_notification" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_enquiry_notification_decline_used_stock",
+    "seller": 9991,
+    "seller-email": "dev+508745@take2.co.za",
+    "seller-first-name": "SEAN",
+    "seller-last-name": "BULPIN"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="e46a89ab-e33c-460a-bbfa-fbe38493d935" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_enquiry_notification_decline_stock" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_enquiry_notification_decline_stock" id="2403c10c-2423-41c8-953d-55d8128d8f28">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_enquiry_notification_decline_stock" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_enquiry_notification_decline_stock",
+    "seller": 9991,
+    "seller-email": "dev+508745@take2.co.za",
+    "seller-first-name": "SEAN",
+    "seller-last-name": "BULPIN"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="9085bb57-c5ad-4532-bc6d-7b9094de6907" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_enquiry_notification_decline_used_stock" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_enquiry_notification_decline_used_stock" id="34f265ce-e597-49b6-a295-47bd2dffd588">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_enquiry_notification_decline_used_stock" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_enquiry_notification_decline_used_stock",
+    "seller": 9991,
+    "seller-email": "dev+508745@take2.co.za",
+    "seller-first-name": "SEAN",
+    "seller-last-name": "BULPIN"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="9372b167-e228-4fbd-a4fa-7d4e5ecefdbc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_enquiry_notification_decline_num_products" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_enquiry_notification_decline_num_products" id="66339bcf-90d8-4375-a840-2d678ef7096b">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_enquiry_notification_decline_num_products" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_enquiry_notification_decline_num_products",
+    "seller": 9991,
+    "seller-email": "dev+508745@take2.co.za",
+    "seller-first-name": "SEAN",
+    "seller-last-name": "BULPIN"
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="cb4c3bf2-f3a4-4231-8fb5-1194f9c560d7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_order_cancelled_notification_tam" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_order_cancelled_notification_tam" id="e9527438-4a44-45a6-9b0f-55d63c4f8c21">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_order_cancelled_notification_tam" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_order_cancelled_notification_tam",
+    "seller_id": 9991,
+    "order_item_id":44722660
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:testCase id="4c3dced3-39fd-4b20-9537-7c89eb5ac72f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="seller_orderitem_cancelled_out_of_stock" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="seller_orderitem_cancelled_out_of_stock" id="e85406b7-d6b6-4716-8015-cc8c8f0ad666">
+        <con:settings/>
+        <con:config service="http://email.mpstg1.env:8003" resourcePath="/email/send" methodName="Send 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="seller_orderitem_cancelled_out_of_stock" id="2f092d0f-14a8-47b6-8cbe-a012a9c37fba" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://email.mpstg1.env:8003</con:endpoint>
+            <con:request>{
+    "type": "seller_orderitem_cancelled_out_of_stock",
+    "seller_id": 9991,
+    "order_item_id":44722660
+}</con:request>
+            <con:originalUri>http://email.mpstg1.env/email/send</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ee7e2f02-103f-48ea-9983-6777ff59a00a" name="Valid HTTP Status Codes">
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

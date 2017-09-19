@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4c8d34a5-aeca-4f62-851c-617e2ef4fa13" activeEnvironment="Default" name="Seller Message Services" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="62ab2920-6071-4b84-9d39-d9e1c83f9d8f" wadlVersion="http://wadl.dev.java.net/2009/02" name="Seller Massage" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+    </con:endpoints>
+    <con:resource name="GetClosedRequestsBySellerId" path="/seller_message/GetClosedRequestsBySellerId" id="7be0621e-6933-412f-a317-3f3453811726">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="774b3baa-97e3-47e0-9245-4b799756a06d" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetClosedRequestsBySellerId">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f0c65fb2-d955-4f95-b691-745daf24d174" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetClosedRequestsBySellerId</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="CloseCustomerRequestById" path="/seller_message/CloseCustomerRequestById" id="4f8d3174-fb24-4316-9dbf-dc9352fb0a4d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="94f4847e-4812-43e0-8980-dcf8bb5b29e8" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:clos="http://10.4.1.64/seller_message/CloseCustomerRequestById">clos:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="5521f910-72f1-4844-adf7-cd071fb42b50" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "request_id": 1
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/CloseCustomerRequestById</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="CreateCustomerInvoiceRequest" path="/seller_message/CreateCustomerInvoiceRequest" id="400bab60-0d88-411a-baff-4d50e3c9b45b">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="d546b685-3c8f-40b0-b6f7-b78d3db50ab6" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cre="http://10.4.1.64/seller_message/CreateCustomerInvoiceRequest">cre:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="b4c8901f-f162-4a94-8730-6c72b6337fdf" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "customer": {
+    "last_name": "string",
+    "wishlist_emails_subscribed": true,
+    "business_name": "string",
+    "salutation": "string",
+    "auto_auth": true,
+    "phone_2": "string",
+    "phone_3": "string",
+    "phone_1": "string",
+    "is_blacklisted": true,
+    "first_name": "string",
+    "vat_no": "string",
+    "id": 0,
+    "newsletter_subscribed": true,
+    "tv_license": "string",
+    "email": "string",
+    "registration_source_id": 0,
+    "fraud_reason_id": 0,
+    "is_voucher_redemption_blocked": true,
+    "customer_state_id": 0,
+    "customer_type_id": 0,
+    "is_kalahari_customer": true,
+    "date_modified": 0,
+    "gender": "string",
+    "notes": "string",
+    "kalahari_id": "string",
+    "birthday": 0,
+    "date_created": 0,
+    "sms_promotions_subscribed": true,
+    "partner_promotions_subscribed": true
+  },
+  "message": "string",
+  "invoice": {
+    "order_id": 0,
+    "items": {
+      "total": 0,
+      "order_id": 0,
+      "invoice_id": 0,
+      "price": 0,
+      "qty": 0,
+      "order_item": {
+        "ShippingDays": 0,
+        "StockQty": 0,
+        "qty": 0,
+        "voucher": {
+          "code": "string",
+          "recipient": "string",
+          "id": 0
+        },
+        "Warehouse": "string",
+        "lastWarehouseSwitchTime": 0,
+        "total": 0,
+        "ShippingInformation": "string",
+        "id": 0,
+        "Status": "string",
+        "DateShipped": 0,
+        "ExtraStatus": "string",
+        "isGift": true,
+        "unit_price": 0,
+        "DateReadyToShip": 0,
+        "PreOrdered": true,
+        "isWrapped": true,
+        "customer_id": 0,
+        "idDailyDeal": 0,
+        "DateReturnCanceled": 0,
+        "product": {
+          "relative_uri": "string",
+          "title": "string",
+          "is_voucher": true,
+          "is_ebook": true,
+          "is_seller_listing": true,
+          "productline_id": 0,
+          "cover_image": "string",
+          "seller": {
+            "id": 0,
+            "name": "string"
+          },
+          "id": 0,
+          "is_prepaid": true
+        },
+        "lastWarehouseSwitchReason": "string",
+        "order_id": 0,
+        "OrderType": "string",
+        "DateExtraStatus": 0,
+        "DateCanceled": 0,
+        "is_daily_deal": true,
+        "DateBackOrder": 0,
+        "CostPrice": 0,
+        "LateCommsSent": 0,
+        "idAffiliate": 0,
+        "DateSupplierOrder": 0,
+        "idSupplierOrder": 0,
+        "idType": 0,
+        "DateAdded": 0,
+        "ForeignCostPrice": 0,
+        "is_digital": true,
+        "PromisedDeliveryDate": 0,
+        "isCollectable": true,
+        "DateOnHold": 0,
+        "UnitPrice": 0,
+        "personalised": {
+          "Name": "string",
+          "Number": "string"
+        }
+      },
+      "customer_id": 0,
+      "id": 0,
+      "order_item_id": 0
+    },
+    "customer_id": 0,
+    "id": 0
+  },
+  "seller": {
+    "customer": {
+      "last_name": "string",
+      "wishlist_emails_subscribed": true,
+      "business_name": "string",
+      "salutation": "string",
+      "auto_auth": true,
+      "phone_2": "string",
+      "phone_3": "string",
+      "phone_1": "string",
+      "is_blacklisted": true,
+      "first_name": "string",
+      "vat_no": "string",
+      "id": 0,
+      "newsletter_subscribed": true,
+      "tv_license": "string",
+      "email": "string",
+      "registration_source_id": 0,
+      "fraud_reason_id": 0,
+      "is_voucher_redemption_blocked": true,
+      "customer_state_id": 0,
+      "customer_type_id": 0,
+      "is_kalahari_customer": true,
+      "date_modified": 0,
+      "gender": "string",
+      "notes": "string",
+      "kalahari_id": "string",
+      "birthday": 0,
+      "date_created": 0,
+      "sms_promotions_subscribed": true,
+      "partner_promotions_subscribed": true
+    },
+    "customer_id": 0,
+    "display_name": "string",
+    "id": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/CreateCustomerInvoiceRequest</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetDaysRequestToCompletion" path="/seller_message/GetDaysRequestToCompletion" id="e76f109b-c1e4-4d7d-89b4-357c72ba1bfa">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="8f92af19-b83f-4958-9dcf-7524f4bce06e" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetClosedRequestsBySellerId">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="3b127dec-ce27-4d1a-b4d8-5b2481f36ee0" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "request_type": "string",
+  "date_from": "string",
+  "date_to": "string"
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetClosedRequestsBySellerId</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetMessagesByRequestId" path="/seller_message/GetMessagesByRequestId" id="3518564f-de2f-47d0-b286-c940ead94ec8">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="7f50ec2c-2062-4309-a64c-c7a143324217" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetMessagesByRequestId">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="43cad26b-23f7-401a-a9e6-5fb41860d64d" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "request_id": 1
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetMessagesByRequestId</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetOpenRequestsBySellerId" path="/seller_message/GetOpenRequestsBySellerId" id="c402e24e-1229-48da-97f0-bfe1369cccb3">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="71286b82-4085-46e4-9025-5494ff61cb82" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetOpenRequestsBySellerId">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="433d522d-7e14-47ac-8f4c-1d2b067bb545" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetOpenRequestsBySellerId</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetOpenRequestsByType" path="/seller_message/GetOpenRequestsByType" id="cbcdcda1-8eca-43ec-b128-f3e347bb9fb8">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="c06fb5fd-3a6c-4fd2-862a-fdc2141fd6a7" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetOpenRequestsByType">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="89ebf8d5-702f-46b8-8d38-b518665341db" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "date_range_parameter": {
+    "from_date": 0,
+    "to_date": 0
+  },
+  "context_ids": 0,
+  "request_type": "string",
+  "seller_ids": 0,
+  "sort_parameter": {
+    "sort_option": "string",
+    "sort_order": "string"
+  },
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetOpenRequestsByType</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetOpenRequestsBySellerId" path="/seller_message/GetOpenRequestsBySellerId" id="44e07bbe-4bd0-4c5b-953d-1887173e4815">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="7d0d76b4-a35a-43b6-83d4-25a387eae0ed" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetOpenRequestsBySellerId">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="1d01cc3c-3ba5-4e38-9718-22defe60c0be" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "page_parameter": {
+    "page_number": 0,
+    "page_size": 0
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetOpenRequestsBySellerId</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTotalLateRequestsForSeller" path="/seller_message/GetTotalLateRequestsForSeller" id="16368445-f2c6-444a-b10b-6b305b121eae">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="1a59db0a-0cb7-44d0-9aeb-dfb743636745" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetTotalLateRequestsForSeller">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="1b20d8da-d77e-4fe7-b9c5-ecf839fb323f" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "request_type": "string",
+  "date_from": "string",
+  "date_to": "string"
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetTotalLateRequestsForSeller</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="GetTotalRequestsForSeller" path="/seller_message/GetTotalRequestsForSeller" id="361691cf-c6b4-424b-925c-afea82b54ddf">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="6c0c719b-39b0-4782-8b39-19ca8eae40d3" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="http://10.4.1.64/seller_message/GetTotalRequestsForSeller">get:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="e6bf4be1-44f2-47d3-8243-73cbfea00f27" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "seller_id": 9991,
+  "request_type": "string",
+  "date_from": "string",
+  "date_to": "string"
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/GetTotalRequestsForSeller</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="SendSellerInvoiceReply" path="/seller_message/SendSellerInvoiceReply" id="4d43683f-5fe3-42a6-82c5-e03d940f24dc">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="9b0f4c2d-ad3d-4248-bea2-85d384cb50f2" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:sen="http://10.4.1.64/seller_message/SendSellerInvoiceReply">sen:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="a679c71e-5672-43df-817c-69e85c50383e" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.4.1.64:30346</con:endpoint>
+          <con:request>{
+  "customer": {
+    "last_name": "string",
+    "wishlist_emails_subscribed": true,
+    "business_name": "string",
+    "salutation": "string",
+    "auto_auth": true,
+    "phone_2": "string",
+    "phone_3": "string",
+    "phone_1": "string",
+    "is_blacklisted": true,
+    "first_name": "string",
+    "vat_no": "string",
+    "id": 0,
+    "newsletter_subscribed": true,
+    "tv_license": "string",
+    "email": "string",
+    "registration_source_id": 0,
+    "fraud_reason_id": 0,
+    "is_voucher_redemption_blocked": true,
+    "customer_state_id": 0,
+    "customer_type_id": 0,
+    "is_kalahari_customer": true,
+    "date_modified": 0,
+    "gender": "string",
+    "notes": "string",
+    "kalahari_id": "string",
+    "birthday": 0,
+    "date_created": 0,
+    "sms_promotions_subscribed": true,
+    "partner_promotions_subscribed": true
+  },
+  "message_string": "string",
+  "file_id": 0,
+  "invoice": {
+    "order_id": 0,
+    "items": {
+      "total": 0,
+      "order_id": 0,
+      "invoice_id": 0,
+      "price": 0,
+      "qty": 0,
+      "order_item": {
+        "ShippingDays": 0,
+        "StockQty": 0,
+        "qty": 0,
+        "voucher": {
+          "code": "string",
+          "recipient": "string",
+          "id": 0
+        },
+        "Warehouse": "string",
+        "lastWarehouseSwitchTime": 0,
+        "total": 0,
+        "ShippingInformation": "string",
+        "id": 0,
+        "Status": "string",
+        "DateShipped": 0,
+        "ExtraStatus": "string",
+        "isGift": true,
+        "unit_price": 0,
+        "DateReadyToShip": 0,
+        "PreOrdered": true,
+        "isWrapped": true,
+        "customer_id": 0,
+        "idDailyDeal": 0,
+        "DateReturnCanceled": 0,
+        "product": {
+          "relative_uri": "string",
+          "title": "string",
+          "is_voucher": true,
+          "is_ebook": true,
+          "is_seller_listing": true,
+          "productline_id": 0,
+          "cover_image": "string",
+          "seller": {
+            "id": 0,
+            "name": "string"
+          },
+          "id": 0,
+          "is_prepaid": true
+        },
+        "lastWarehouseSwitchReason": "string",
+        "order_id": 0,
+        "OrderType": "string",
+        "DateExtraStatus": 0,
+        "DateCanceled": 0,
+        "is_daily_deal": true,
+        "DateBackOrder": 0,
+        "CostPrice": 0,
+        "LateCommsSent": 0,
+        "idAffiliate": 0,
+        "DateSupplierOrder": 0,
+        "idSupplierOrder": 0,
+        "idType": 0,
+        "DateAdded": 0,
+        "ForeignCostPrice": 0,
+        "is_digital": true,
+        "PromisedDeliveryDate": 0,
+        "isCollectable": true,
+        "DateOnHold": 0,
+        "UnitPrice": 0,
+        "personalised": {
+          "Name": "string",
+          "Number": "string"
+        }
+      },
+      "customer_id": 0,
+      "id": 0,
+      "order_item_id": 0
+    },
+    "customer_id": 0,
+    "id": 0
+  },
+  "request_id": 0,
+  "message": {
+    "attachments": {
+      "created_at": 0,
+      "file_id": 0,
+      "id": 0,
+      "message_id": 0
+    },
+    "created_at": 0,
+    "request": {
+      "seller_id": 0,
+      "context_id": 0,
+      "created_at": 0,
+      "modified_at": 0,
+      "closed_at": 0,
+      "requester_id": 0,
+      "type": "string",
+      "id": 0
+    },
+    "id": 0,
+    "request_id": 0,
+    "author_id": 0,
+    "message": "string"
+  }
+}</con:request>
+          <con:originalUri>http://10.4.1.64/seller_message/SendSellerInvoiceReply</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>
